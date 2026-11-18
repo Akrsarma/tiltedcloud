@@ -1,0 +1,75 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f8fc">
+  <meta name="description" content="tiltedcloud.com is available to buy. Get in touch to make your best offer.">
+  <title>tiltedcloud.com — Available to Buy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root { color-scheme: light; --bg: #f7f8fc; --ink: #171827; --muted: #73778b; --line: rgba(23,24,39,.12); --lime: #c9fb72; --accent: #6657e8; }
+    * { box-sizing: border-box; }
+    body { margin: 0; min-height: 100svh; background: var(--bg); color: var(--ink); font-family: Manrope, sans-serif; overflow-x: hidden; }
+    body::before { content: ""; position: fixed; inset: 0; pointer-events: none; opacity: .11; background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.86' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.17'/%3E%3C/svg%3E"); z-index: 4; }
+    .glow { position: fixed; width: 680px; height: 680px; border-radius: 50%; background: #b8b2ff; filter: blur(170px); opacity: .38; top: -370px; left: 50%; transform: translateX(-50%); }
+    .wrap { width: min(1160px, calc(100% - 56px)); min-height: 100svh; margin: auto; position: relative; z-index: 1; display: flex; flex-direction: column; }
+    header { height: 92px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--line); }
+    .brand { font-weight: 800; letter-spacing: -.055em; font-size: 18px; }
+    .top-note { color: var(--muted); font: 11px 'DM Mono', monospace; letter-spacing: .12em; text-transform: uppercase; }
+    main { flex: 1; display: grid; grid-template-columns: 1.1fr .9fr; align-items: center; gap: 7%; padding: 76px 0 92px; }
+    .eyebrow { display: inline-flex; align-items: center; gap: 10px; font: 11px 'DM Mono', monospace; letter-spacing: .16em; text-transform: uppercase; color: var(--accent); }
+    .pulse { width: 7px; height: 7px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 15px rgba(102,87,232,.35); }
+    h1 { font-size: clamp(52px, 7.3vw, 100px); letter-spacing: -.085em; line-height: .94; margin: 29px 0 28px; font-weight: 700; }
+    h1 span { color: var(--accent); display: block; }
+    .intro { max-width: 480px; color: #62667a; font-size: 17px; line-height: 1.75; margin: 0; }
+    .intro strong { color: var(--ink); font-weight: 600; }
+    .card { position: relative; padding: 34px; border: 1px solid rgba(23,24,39,.09); border-radius: 19px; background: rgba(255,255,255,.82); box-shadow: 0 30px 90px rgba(53,48,110,.12); backdrop-filter: blur(20px); }
+    .card::before { content: ""; position: absolute; width: 130px; height: 2px; background: linear-gradient(90deg, transparent, var(--accent), transparent); top: -1px; left: 35px; }
+    .card-label { font: 10px 'DM Mono', monospace; color: var(--muted); letter-spacing: .17em; text-transform: uppercase; }
+    .domain { margin: 18px 0 27px; font-size: clamp(27px, 3.3vw, 40px); letter-spacing: -.065em; font-weight: 700; white-space: nowrap; }
+    .rule { height: 1px; background: var(--line); margin: 0 0 25px; }
+    .offer { color: var(--muted); font-size: 14px; line-height: 1.7; margin: 0 0 23px; }
+    .button { display: flex; justify-content: space-between; align-items: center; text-decoration: none; color: #fff; background: var(--accent); padding: 17px 19px; border-radius: 9px; font-size: 14px; font-weight: 800; transition: transform .2s, background .2s; }
+    .button:hover { transform: translateY(-2px); background: #5143cf; }
+    .arrow { font-size: 20px; line-height: 1; }
+    .secure { margin-top: 16px; display: flex; align-items: center; gap: 8px; color: #777b8b; font: 10px 'DM Mono', monospace; letter-spacing: .03em; }
+    .secure svg { width: 13px; height: 13px; color: var(--accent); }
+    footer { display: flex; justify-content: space-between; align-items: center; gap: 18px; padding: 22px 0 25px; border-top: 1px solid var(--line); color: #777b8b; font: 10px 'DM Mono', monospace; letter-spacing: .04em; }
+    footer a { color: #555a70; text-decoration: none; } footer a:hover { color: var(--accent); }
+    @media (max-width: 760px) { .wrap { width: min(100% - 38px, 540px); } header { min-height: 72px; height: auto; gap: 12px; } .top-note { font-size: 9px; text-align: right; letter-spacing: .08em; } main { grid-template-columns: 1fr; gap: 38px; padding: 58px 0 56px; } h1 { font-size: clamp(54px, 14vw, 78px); margin: 24px 0; } .intro { font-size: 15px; } .card { padding: 27px 23px; } .domain { font-size: clamp(26px, 8vw, 38px); } footer { font-size: 9px; flex-wrap: wrap; padding-bottom: 22px; } }
+    @media (max-width: 380px) { .wrap { width: calc(100% - 30px); } .brand { font-size: 16px; } .top-note { max-width: 145px; line-height: 1.5; } .domain { font-size: 25px; } .secure { font-size: 9px; } }
+    @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; } }
+  </style>
+</head>
+<body>
+  <div class="glow" aria-hidden="true"></div>
+  <div class="wrap">
+    <header>
+      <div class="brand">tiltedcloud</div>
+      <div class="top-note">A premium domain opportunity</div>
+    </header>
+    <main>
+      <section>
+        <div class="eyebrow"><span class="pulse"></span> Premium domain · Available now</div>
+        <h1>Your next<br>big idea<span>starts here.</span></h1>
+        <p class="intro"><strong>tiltedcloud.com is a premium domain available to buy.</strong> Distinctive, memorable, and ready to give your next big idea a standout address. Make your best offer and let’s make it yours.</p>
+      </section>
+      <aside class="card" aria-label="Make an offer for tiltedcloud.com">
+        <div class="card-label">A premium digital address</div>
+        <div class="domain">tiltedcloud.com</div>
+        <div class="rule"></div>
+        <p class="offer">Have a project in mind? Get in touch directly to discuss the domain and your best deal.</p>
+        <a class="button" href="mailto:akrsarmastudy@gmail.com?subject=Offer%20for%20tiltedcloud.com&body=Hi%2C%0A%0AI'd%20like%20to%20make%20an%20offer%20for%20tiltedcloud.com.%0A%0AMy%20offer%3A%20">
+          <span>Make your best offer</span><span class="arrow" aria-hidden="true">↗</span>
+        </a>
+        <div class="secure"><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 1.5 13 3.5v3.8c0 3.1-2 5.9-5 7.2-3-1.3-5-4.1-5-7.2V3.5l5-2Z" stroke="currentColor" stroke-width="1.3"/><path d="m5.6 7.8 1.5 1.5 3.3-3.4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg> Direct contact · Serious offers welcome</div>
+      </aside>
+    </main>
+    <footer><span>© <span id="year">2026</span> tiltedcloud.com</span><a href="mailto:akrsarmastudy@gmail.com">akrsarmastudy@gmail.com</a></footer>
+  </div>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
